@@ -1,0 +1,15 @@
+- src: https://github.com/bluk/ansible-role-nodenv.git
+  name: bluk.nodenv
+  version: master
+- src: https://github.com/bluk/ansible-role-rbenv.git
+  name: bluk.rbenv
+  version: master
+- src: https://github.com/bluk/ansible-role-symlink-repo.git
+  name: bluk.symlink_repo
+  version: master
+- src: https://github.com/bluk/ansible-role-import-gpg-repo.git
+  name: bluk.import_gpg_repo
+  version: master
+- src: https://github.com/bluk/ansible-role-homebrew.git
+  name: bluk.homebrew
+  version: master

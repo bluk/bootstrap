@@ -1,0 +1,42 @@
+---
+- hosts: personal
+  roles:
+    - role: bluk.homebrew
+      vars:
+        homebrew_taps:
+          - name: homebrew/bundle
+          - name: homebrew/core
+          - name: vapor/tap
+        homebrew_packages:
+          - name: ack
+          - name: bash
+          - name: bash-completion
+          - name: ctags
+          - name: curl
+          - name: git
+          - name: gnupg
+          - name: pinentry-mac
+          - name: reattach-to-user-namespace
+          - name: tmux
+          - name: vim
+          - name: wget
+          - name: vapor/tap/vapor
+        homebrew_update: true
+        homebrew_upgrade: true
+    - role: bluk.nodenv
+    - role: bluk.rbenv
+    - role: bluk.symlink_repo
+      vars:
+        git_repo: "git@github.com:bluk/configs.git"
+        git_repo_local_dest: "~/Code/configs"
+        git_repo_dir_src: "home"
+        symlink_local_dest: "~"
+
+    # Must be after the config is pulled down
+
+    - role: bluk.import_gpg_repo
+      vars:
+        git_repo: "git@github.com:bluk/public-gpg-keys.git"
+        git_repo_local_dest: "~/Code/public-gpg-keys"
+        git_repo_dir_src: "keys"
+    - role: vim
