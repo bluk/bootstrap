@@ -25,6 +25,11 @@
         homebrew_upgrade: true
     - role: bluk.nodenv
     - role: bluk.rbenv
+    - role: bluk.git_clone
+      vars:
+        git_repos:
+          - url: git@github.com:junegunn/fzf.git
+            dest: "~/.fzf"
     - role: bluk.symlink_repo
       vars:
         git_repo: "git@github.com:bluk/configs.git"

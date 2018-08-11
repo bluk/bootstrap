@@ -13,3 +13,6 @@
 - src: https://github.com/bluk/ansible-role-homebrew.git
   name: bluk.homebrew
   version: master
+- src: https://github.com/bluk/ansible-role-git-clone.git
+  name: bluk.git_clone
+  version: master
