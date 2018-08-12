@@ -18,6 +18,7 @@
           - name: pinentry-mac
           - name: reattach-to-user-namespace
           - name: tmux
+          - name: swiftlint
           - name: vim
           - name: wget
           - name: vapor/tap/vapor
