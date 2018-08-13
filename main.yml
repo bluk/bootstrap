@@ -16,12 +16,13 @@
           - name: git
           - name: gnupg
           - name: pinentry-mac
+          - name: protobuf
           - name: reattach-to-user-namespace
-          - name: tmux
           - name: swiftlint
+          - name: tmux
+          - name: vapor/tap/vapor
           - name: vim
           - name: wget
-          - name: vapor/tap/vapor
         homebrew_update: true
         homebrew_upgrade: true
     - role: bluk.nodenv
