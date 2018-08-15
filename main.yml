@@ -23,6 +23,8 @@
           - name: vapor/tap/vapor
           - name: vim
           - name: wget
+        homebrew_casks:
+          - name: minikube
         homebrew_update: true
         homebrew_upgrade: true
     - role: bluk.nodenv
