@@ -27,6 +27,12 @@
         homebrew_upgrade: true
     - role: bluk.nodenv
     - role: bluk.rbenv
+    - role: bluk.grpc_swift
+      vars:
+        grpc_swift_install_path: ~/provision/grpc-swift
+        grpc_swift_git_url: https://github.com/grpc/grpc-swift.git
+        grpc_swift_git_update: true
+        grpc_swift_binary_install_path: /usr/local/bin/
     - role: bluk.git_clone
       vars:
         git_repos:

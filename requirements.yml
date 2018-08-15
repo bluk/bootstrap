@@ -16,3 +16,6 @@
 - src: https://github.com/bluk/ansible-role-git-clone.git
   name: bluk.git_clone
   version: master
+- src: https://github.com/bluk/ansible-role-grpc-swift.git
+  name: bluk.grpc_swift
+  version: master
