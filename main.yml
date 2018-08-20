@@ -14,9 +14,11 @@
           - name: ctags
           - name: curl
           - name: git
+          - name: go
           - name: gnupg
           - name: kubernetes-cli
           - name: kubernetes-helm
+          - name: libtool
           - name: pinentry-mac
           - name: protobuf
           - name: reattach-to-user-namespace
@@ -25,6 +27,7 @@
           - name: vapor/tap/vapor
           - name: vim
           - name: wget
+          - name: yubico-piv-tool
         homebrew_casks:
           - name: minikube
         homebrew_update: true
