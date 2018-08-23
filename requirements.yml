@@ -4,6 +4,9 @@
 - src: https://github.com/bluk/ansible-role-rbenv.git
   name: bluk.rbenv
   version: v0.1.0
+- src: https://github.com/bluk/ansible-role-pyenv.git
+  name: bluk.pyenv
+  version: v0.1.0
 - src: https://github.com/bluk/ansible-role-symlink-repo.git
   name: bluk.symlink_repo
   version: v0.2.1

@@ -34,6 +34,7 @@
         homebrew_upgrade: true
     - role: bluk.nodenv
     - role: bluk.rbenv
+    - role: bluk.pyenv
     - role: bluk.grpc_swift
       vars:
         grpc_swift_install_path: ~/provision/grpc-swift
