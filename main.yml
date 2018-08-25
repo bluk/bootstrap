@@ -55,6 +55,13 @@
         symlink_local_force_replace: yes
     - role: bluk.symlink_repo
       vars:
+        git_repo: "git@github.com:bluk/dotfiles.git"
+        git_repo_local_dest: "~/provision/dotfiles"
+        git_repo_dir_src: "gnupg"
+        symlink_local_dest: "~/.gnupg"
+        symlink_local_force_replace: yes
+    - role: bluk.symlink_repo
+      vars:
         git_repo: "git@github.com:bluk/configs.git"
         git_repo_local_dest: "~/Code/configs"
         git_repo_dir_src: "home"
