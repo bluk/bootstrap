@@ -19,6 +19,7 @@
           - name: kubernetes-cli
           - name: kubernetes-helm
           - name: libtool
+          - name: libxml2
           - name: pinentry-mac
           - name: protobuf
           - name: reattach-to-user-namespace
