@@ -16,6 +16,7 @@
           - name: git
           - name: go
           - name: gnupg
+          - name: jq
           - name: kubernetes-cli
           - name: kubernetes-helm
           - name: libtool
@@ -84,3 +85,50 @@
         git_repo_local_dest: "~/provision/public-gpg-keys"
         git_repo_dir_src: "keys"
     - role: vim
+    - role: bluk.hashicorp
+      vars:
+        hashicorp_program: vault
+        hashicorp_version: 0.11.1
+        hashicorp_platform: darwin_amd64
+        hashicorp_install_path: /usr/local/bin
+    - role: bluk.hashicorp
+      vars:
+        hashicorp_program: consul
+        hashicorp_version: 1.2.3
+        hashicorp_platform: darwin_amd64
+        hashicorp_install_path: /usr/local/bin
+    - role: bluk.hashicorp
+      vars:
+        hashicorp_program: terraform
+        hashicorp_version: 0.11.8
+        hashicorp_platform: darwin_amd64
+        hashicorp_install_path: /usr/local/bin
+    - role: bluk.hashicorp
+      vars:
+        hashicorp_program: nomad
+        hashicorp_version: 0.8.5
+        hashicorp_platform: darwin_amd64
+        hashicorp_install_path: /usr/local/bin
+    - role: bluk.hashicorp
+      vars:
+        hashicorp_program: packer
+        hashicorp_version: 1.3.1
+        hashicorp_platform: darwin_amd64
+        hashicorp_install_path: /usr/local/bin
+    - role: bluk.hashicorp
+      vars:
+        hashicorp_program: consul-template
+        hashicorp_version: 0.19.5
+        hashicorp_platform: darwin_amd64
+        hashicorp_install_path: /usr/local/bin
+    - role: bluk.hashicorp
+      vars:
+        hashicorp_program: envconsul
+        hashicorp_version: 0.7.3
+        hashicorp_platform: darwin_amd64
+        hashicorp_install_path: /usr/local/bin
+    - role: bluk.op_cli
+      vars:
+        op_cli_version: 0.5.3
+        op_cli_platform: darwin_amd64
+        op_cli_install_path: /usr/local/bin
