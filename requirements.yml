@@ -24,7 +24,7 @@
   version: v0.1.0
 - src: https://github.com/bluk/ansible-role-hashicorp.git
   name: bluk.hashicorp
-  version: v0.1.0
+  version: v0.2.0
 - src: https://github.com/bluk/ansible-role-1password-cli.git
   name: bluk.op_cli
-  version: v0.1.0
+  version: v0.2.0
