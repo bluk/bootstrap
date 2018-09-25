@@ -13,6 +13,7 @@
           - name: bash-completion
           - name: ctags
           - name: curl
+          - name: fpp
           - name: git
           - name: go
           - name: gnupg
