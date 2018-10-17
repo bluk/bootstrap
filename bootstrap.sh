@@ -19,6 +19,3 @@ fi
 ansible-galaxy install -r requirements.yml
 
 ansible-playbook -i inventory main.yml
-
-# Install the fzf bin
-~/.fzf/install --bin
