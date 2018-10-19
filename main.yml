@@ -32,6 +32,7 @@
           - name: vim
           - name: wget
           - name: yubico-piv-tool
+          - name: zlib
         homebrew_casks:
           - name: minikube
         homebrew_update: true
@@ -127,6 +128,22 @@
         op_cli_platform: darwin_amd64
         op_cli_install_path: /usr/local/bin
   tasks:
+    - name: Install Ruby
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && rbenv install -s 2.5.3
+    - name: Use Ruby
+      shell: rbenv global 2.5.3
+    - name: Use Python 3
+      shell: pyenv global 3.7.0
+    - name: Install Python 3
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && pyenv install -s 3.7.0
+    - name: Use Python 3
+      shell: pyenv global 3.7.0
+    - name: Install Node
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && nodenv install -s 10.12.0
+    - name: Use Node
+      shell: nodenv global 10.12.0
+    - name: Install neovim for vim plugin
+      shell: "pip3 install neovim"
     - name: Install dockerfile-language-server-nodejs
       command: "npm install -g dockerfile-language-server-nodejs"
     - name: Install dockerfile-language-server-nodejs
