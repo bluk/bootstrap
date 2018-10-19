@@ -1,6 +1,4 @@
-# Bootstrap
-
-[![GitHub license](https://img.shields.io/github/license/bluk/bootstrap.svg)](https://github.com/bluk/bootstrap/blob/master/LICENSE)
+# 👢 Bootstrap
 
 Scripts used to bootstrap macOS with my standard configuration.
 
@@ -10,3 +8,9 @@ instead of using this repository as-is.
 ## Requirements
 
 Only tested with the latest macOS version.
+
+## License
+
+[Apache-2.0 License][license]
+
+[license]: LICENSE
