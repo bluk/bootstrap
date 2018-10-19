@@ -132,8 +132,6 @@
       shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && rbenv install -s 2.5.3
     - name: Use Ruby
       shell: rbenv global 2.5.3
-    - name: Use Python 3
-      shell: pyenv global 3.7.0
     - name: Install Python 3
       shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && pyenv install -s 3.7.0
     - name: Use Python 3
