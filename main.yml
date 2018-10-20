@@ -15,7 +15,6 @@
           - name: curl
           - name: fpp
           - name: git
-          - name: go
           - name: gnupg
           - name: hub
           - name: jq
@@ -40,6 +39,7 @@
     - role: bluk.nodenv
     - role: bluk.rbenv
     - role: bluk.pyenv
+    - role: bluk.goenv
     - role: bluk.grpc_swift
       vars:
         grpc_swift_install_path: ~/provision/grpc-swift
@@ -140,6 +140,10 @@
       shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && nodenv install -s 10.12.0
     - name: Use Node
       shell: nodenv global 10.12.0
+    - name: Install Go
+      shell: goenv install -s 1.11.1
+    - name: Use Go
+      shell: goenv global 1.11.1
     - name: Install neovim for vim plugin
       shell: "pip3 install neovim"
     - name: Install dockerfile-language-server-nodejs
