@@ -158,8 +158,6 @@
       command: "npm i -g vscode-css-languageserver-bin"
     - name: Install yaml-language-server
       command: "npm i -g yaml-language-server"
-    - name: Install yaml-language-server
-      command: "npm i -g yaml-language-server"
     - name: Install go-langserver
       command: "go get -u github.com/sourcegraph/go-langserver"
     - name: Install javascript-typescript-langserver
