@@ -9,6 +9,7 @@
           - name: vapor/tap
         homebrew_packages:
           - name: ack
+          - name: asciinema
           - name: bash
           - name: bash-completion
           - name: ctags
@@ -25,6 +26,7 @@
           - name: pinentry-mac
           - name: protobuf
           - name: reattach-to-user-namespace
+          - name: swiftformat
           - name: swiftlint
           - name: tmux
           - name: vapor/tap/vapor
