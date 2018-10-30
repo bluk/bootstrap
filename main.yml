@@ -54,6 +54,8 @@
         git_repos:
           - url: git@github.com:junegunn/fzf.git
             dest: "~/.fzf"
+          - url: https://github.com/tmux-plugins/tpm
+            dest: "~/.tmux/plugins/tpm"
     - role: bluk.symlink_repo
       vars:
         git_repo: "git@github.com:bluk/dotfiles.git"
