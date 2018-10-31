@@ -144,9 +144,9 @@
     - name: Use Python 3
       shell: pyenv global 3.7.0 2.7.15
     - name: Install Node
-      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && nodenv install -s 10.12.0
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include" && nodenv install -s 10.13.0
     - name: Use Node
-      shell: nodenv global 10.12.0
+      shell: nodenv global 10.13.0
     - name: Install Go
       shell: goenv install -s 1.11.1
     - name: Use Go
