@@ -150,9 +150,9 @@
     - name: Use Node
       shell: nodenv global 10.13.0
     - name: Install Go
-      shell: goenv install -s 1.11.1
+      shell: goenv install -s 1.11.2
     - name: Use Go
-      shell: goenv global 1.11.1
+      shell: goenv global 1.11.2
     - name: Install neovim for vim plugin
       shell: "pip3 install neovim"
     - name: Install dockerfile-language-server-nodejs
