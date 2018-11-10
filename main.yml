@@ -39,6 +39,7 @@
           - name: zlib
         homebrew_casks:
           - name: minikube
+          - name: fastlane
         homebrew_update: true
         homebrew_upgrade: true
     - role: bluk.nodenv
