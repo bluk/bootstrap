@@ -15,6 +15,7 @@
           - name: ctags
           - name: curl
           - name: direnv
+          - name: fish
           - name: fpp
           - name: git
           - name: gnupg
