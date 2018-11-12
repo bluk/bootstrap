@@ -46,6 +46,7 @@
     - role: bluk.rbenv
     - role: bluk.pyenv
     - role: bluk.goenv
+    - role: bluk.swiftenv
     - role: bluk.grpc_swift
       vars:
         grpc_swift_install_path: ~/provision/grpc-swift
@@ -154,6 +155,10 @@
       shell: goenv install -s 1.11.2
     - name: Use Go
       shell: goenv global 1.11.2
+    - name: Install Swift
+      shell: swiftenv install -s 4.2.1
+    - name: Use Swift
+      shell: swiftenv global 4.2.1
     - name: Install neovim for vim plugin
       shell: "pip3 install neovim"
     - name: Install dockerfile-language-server-nodejs
