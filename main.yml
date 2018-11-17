@@ -188,4 +188,4 @@
     - name: Install fzf bin
       shell: ~/.fzf/install --bin
     - name: Install vim plugins
-      shell: vim +PlugInstall +PlugClean! +PlugUpdate +qall
+      shell: vim +PlugInstall +PlugClean! +qall
