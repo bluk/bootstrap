@@ -169,9 +169,7 @@
       shell: swiftenv global 4.2.1
     - name: Install neovim for vim plugin
       shell: "pip3 install neovim"
-    - name: Install dockerfile-language-server-nodejs
-      command: "npm install -g dockerfile-language-server-nodejs"
-    - name: Install dockerfile-language-server-nodejs
+    - name: Install bash-language-server
       command: "npm i -g bash-language-server"
     - name: Install vscode-json-languageserver
       command: "npm i -g vscode-json-languageserver"
@@ -190,4 +188,4 @@
     - name: Install fzf bin
       shell: ~/.fzf/install --bin
     - name: Install vim plugins
-      shell: vim +PlugInstall +PlugClean! +qall
+      shell: vim +PlugInstall +PlugClean! +PlugUpdate +qall
