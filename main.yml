@@ -183,6 +183,8 @@
       command: "go get -u github.com/sourcegraph/go-langserver"
     - name: Install javascript-typescript-langserver
       command: "npm i -g javascript-typescript-langserver"
+    - name: Install typescript-language-server
+      command: "npm install -g typescript typescript-language-server"
     - name: Install python-language-server
       command: "pip install 'python-language-server[all]'"
     - name: Install fzf bin
