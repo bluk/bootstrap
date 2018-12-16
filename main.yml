@@ -160,7 +160,7 @@
     - name: Use Node
       shell: nodenv global 10.13.0
     - name: Install Go
-      shell: goenv install -s 1.11.2
+      shell: goenv install -s 1.11.3
     - name: Use Go
       shell: goenv global 1.11.2
     - name: Install Swift
@@ -186,7 +186,7 @@
     - name: Install yaml-language-server
       command: "npm i -g yaml-language-server"
     - name: Install go-langserver
-      command: "go get -u github.com/sourcegraph/go-langserver"
+      shell: "go get -u github.com/sourcegraph/go-langserver"
     - name: Install javascript-typescript-langserver
       command: "npm i -g javascript-typescript-langserver"
     - name: Install typescript-language-server
