@@ -167,8 +167,14 @@
       shell: swiftenv install -s 4.2.1
     - name: Use Swift
       shell: swiftenv global 4.2.1
-    - name: Install neovim for vim plugin
-      shell: "pip3 install neovim"
+    - name: Install Rust
+      shell: curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable -y
+    - name: Install Rust Toolchain Stable
+      shell: rustup update
+    - name: Install Rust Toolchain Stable
+      shell: rustup toolchain install stable
+    - name: Install Rust Components
+      shell: rustup component add rls-preview rust-analysis rust-src rustfmt
     - name: Install bash-language-server
       command: "npm i -g bash-language-server"
     - name: Install vscode-json-languageserver
