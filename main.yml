@@ -160,9 +160,9 @@
     - name: Use Node
       shell: nodenv global 10.15.0
     - name: Install Go
-      shell: goenv install -s 1.11.4
+      shell: goenv install -s 1.11.5
     - name: Use Go
-      shell: goenv global 1.11.4
+      shell: goenv global 1.11.5
     - name: Install Swift
       shell: swiftenv install -s 4.2.1
     - name: Use Swift
