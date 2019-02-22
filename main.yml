@@ -61,6 +61,8 @@
             dest: "~/.fzf"
           - url: https://github.com/tmux-plugins/tpm
             dest: "~/.tmux/plugins/tpm"
+          - url: git@github.com:apple/sourcekit-lsp.git
+            dest: "~/provision/sourcekit-lsp"
     - role: bluk.symlink_repo
       vars:
         git_repo: "git@github.com:bluk/dotfiles.git"
