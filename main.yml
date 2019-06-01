@@ -103,31 +103,31 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: vault
-        hashicorp_version: 1.1.1
+        hashicorp_version: 1.1.2
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: consul
-        hashicorp_version: 1.4.4
+        hashicorp_version: 1.5.1
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: terraform
-        hashicorp_version: 0.11.13
+        hashicorp_version: 0.12.0
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: nomad
-        hashicorp_version: 0.9.0
+        hashicorp_version: 0.9.1
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: packer
-        hashicorp_version: 1.4.0
+        hashicorp_version: 1.4.1
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
@@ -144,14 +144,14 @@
         hashicorp_install_path: /usr/local/bin
     - role: bluk.op_cli
       vars:
-        op_cli_version: 0.5.5
+        op_cli_version: 0.5.6-003
         op_cli_platform: darwin_amd64
         op_cli_install_path: /usr/local/bin
   tasks:
     - name: Install Ruby
-      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && rbenv install -s 2.6.0
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && rbenv install -s 2.6.3
     - name: Use Ruby
-      shell: rbenv global 2.6.2
+      shell: rbenv global 2.6.3
     - name: Install Python 3
       shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && pyenv install -s 3.7.3
     - name: Install Python 2
@@ -159,17 +159,17 @@
     - name: Use Python 3
       shell: pyenv global 3.7.3 2.7.16
     - name: Install Node
-      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && nodenv install -s 10.15.3
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && nodenv install -s 10.16.0
     - name: Use Node
-      shell: nodenv global 10.15.3
+      shell: nodenv global 10.16.0
     - name: Install Go
-      shell: goenv install -s 1.12.3
+      shell: goenv install -s 1.12.5
     - name: Use Go
-      shell: goenv global 1.12.3
+      shell: goenv global 1.12.5
     # - name: Install Swift
-    #   shell: swiftenv install -s 5.0.0
+    #   shell: swiftenv install -s 5.0.1
     # - name: Use Swift
-    #   shell: swiftenv global 5.0.0
+    #   shell: swiftenv global 5.0.1
     - name: Install Rust
       shell: curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable -y
     - name: Install Rust Toolchain Stable
