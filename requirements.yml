@@ -15,7 +15,7 @@
   version: v0.1.1
 - src: https://github.com/bluk/ansible-role-symlink-repo.git
   name: bluk.symlink_repo
-  version: v0.3.0
+  version: v0.4.0
 - src: https://github.com/bluk/ansible-role-import-gpg-repo.git
   name: bluk.import_gpg_repo
   version: v0.2.0
