@@ -177,7 +177,7 @@
     - name: Install Rust Toolchain Stable
       shell: rustup toolchain install stable
     - name: Install Rust Components
-      shell: rustup component add rls-preview rust-analysis rust-src rustfmt
+      shell: rustup component add rls-preview rust-analysis rust-src rustfmt clippy
     - name: Install bash-language-server
       command: "npm i -g bash-language-server"
     - name: Install vscode-json-languageserver
