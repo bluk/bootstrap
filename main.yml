@@ -115,13 +115,13 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: terraform
-        hashicorp_version: 0.12.11
+        hashicorp_version: 0.12.12
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: nomad
-        hashicorp_version: 0.9.6
+        hashicorp_version: 0.10.0
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
