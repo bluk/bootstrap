@@ -16,7 +16,6 @@
           - name: curl
           - name: direnv
           - name: fish
-          - name: fpp
           - name: git
           - name: gnupg
           - name: hub
@@ -34,7 +33,6 @@
           - name: swiftformat
           - name: swiftlint
           - name: tmux
-          - name: vapor/tap/vapor
           - name: vim
           - name: wget
           - name: yubico-piv-tool
@@ -49,12 +47,6 @@
     - role: bluk.pyenv
     - role: bluk.goenv
     - role: bluk.swiftenv
-    # - role: bluk.grpc_swift
-    #   vars:
-    #     grpc_swift_install_path: ~/provision/grpc-swift
-    #     grpc_swift_git_url: https://github.com/grpc/grpc-swift.git
-    #     grpc_swift_git_update: false
-    #     grpc_swift_binary_install_path: /usr/local/bin/
     - role: bluk.git_clone
       vars:
         git_repos:
@@ -149,9 +141,9 @@
     #     op_cli_install_path: /usr/local/bin
   tasks:
     - name: Install Ruby
-      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && rbenv install -s 2.6.5
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && rbenv install -s 2.7.0
     - name: Use Ruby
-      shell: rbenv global 2.6.5
+      shell: rbenv global 2.7.0
     - name: Install Python 3
       shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && pyenv install -s 3.8.0
     - name: Install Python 2
@@ -159,13 +151,13 @@
     - name: Use Python 3
       shell: pyenv global 3.8.0 2.7.17
     - name: Install Node
-      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && nodenv install -s 12.13.1
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && nodenv install -s 12.16.1
     - name: Use Node
-      shell: nodenv global 12.13.1
+      shell: nodenv global 12.16.1
     - name: Install Go
-      shell: goenv install -s 1.13.5
+      shell: goenv install -s 1.13.8
     - name: Use Go
-      shell: goenv global 1.13.5
+      shell: goenv global 1.13.8
     # - name: Install Swift
     #   shell: swiftenv install -s 5.0.1
     # - name: Use Swift
