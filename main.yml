@@ -106,7 +106,7 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: terraform
-        hashicorp_version: 0.12.25
+        hashicorp_version: 0.12.26
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
@@ -155,10 +155,10 @@
       shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && nodenv install -s 12.16.3
     - name: Use Node
       shell: nodenv global 12.16.3
-    # - name: Install Go
-    #   shell: goenv install -s 1.14.3
-    # - name: Use Go
-    #   shell: goenv global 1.14.3
+    - name: Install Go
+      shell: goenv install -s 1.14.3
+    - name: Use Go
+      shell: goenv global 1.14.3
     - name: Install Rust
       shell: curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable -y
     - name: Install Rust Toolchain Stable
