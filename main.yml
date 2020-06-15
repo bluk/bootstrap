@@ -100,7 +100,7 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: consul
-        hashicorp_version: 1.6.2
+        hashicorp_version: 1.7.4
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
@@ -118,7 +118,7 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: packer
-        hashicorp_version: 1.5.6
+        hashicorp_version: 1.6.0
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
