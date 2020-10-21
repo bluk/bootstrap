@@ -94,31 +94,31 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: vault
-        hashicorp_version: 1.3.0
+        hashicorp_version: 1.5.4
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: consul
-        hashicorp_version: 1.8.1
+        hashicorp_version: 1.8.4
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: terraform
-        hashicorp_version: 0.12.29
+        hashicorp_version: 0.13.4
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: nomad
-        hashicorp_version: 0.12.1
+        hashicorp_version: 0.12.5
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: packer
-        hashicorp_version: 1.6.1
+        hashicorp_version: 1.6.4
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
@@ -141,10 +141,10 @@
   tasks:
     - name: Install Universal ctags
       shell: brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-    - name: Install Ruby
-      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && rbenv install -s 2.7.1
-    - name: Use Ruby
-      shell: rbenv global 2.7.1
+    # - name: Install Ruby
+    #   shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && rbenv install -s 2.7.1
+    # - name: Use Ruby
+    #   shell: rbenv global 2.7.1
     # - name: Install Python 3
     #   shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && pyenv install -s 3.8.3
     # - name: Install Python 2
@@ -152,13 +152,13 @@
     # - name: Use Python 3
     #   shell: pyenv global 3.8.3 2.7.17
     - name: Install Node
-      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && nodenv install -s 14.7.0
+      shell: export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib" && export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include" && nodenv install -s 15.0.0
     - name: Use Node
-      shell: nodenv global 14.7.0
-    - name: Install Go
-      shell: goenv install -s 1.14.6
-    - name: Use Go
-      shell: goenv global 1.14.6
+      shell: nodenv global 15.0.0
+    # - name: Install Go
+    #   shell: goenv install -s 1.15.2
+    # - name: Use Go
+    #   shell: goenv global 1.15.2
     - name: Install Rust
       shell: curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable -y
     - name: Install Rust Toolchain Stable
@@ -177,14 +177,14 @@
       command: "npm i -g vscode-css-languageserver-bin"
     - name: Install yaml-language-server
       command: "npm i -g yaml-language-server"
-    - name: Install go-langserver
-      shell: "go get -u github.com/sourcegraph/go-langserver"
+    # - name: Install go-langserver
+    #   shell: "go get -u github.com/sourcegraph/go-langserver"
     - name: Install javascript-typescript-langserver
       command: "npm i -g javascript-typescript-langserver"
     - name: Install typescript-language-server
       command: "npm install -g typescript typescript-language-server"
-    - name: Install python-language-server
-      command: "pip install 'python-language-server[all]'"
+    # - name: Install python-language-server
+    #   command: "pip install 'python-language-server[all]'"
     - name: Install fzf bin
       shell: ~/.fzf/install --bin
     - name: Install vim plugins
