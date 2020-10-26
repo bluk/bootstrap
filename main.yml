@@ -25,6 +25,7 @@
           - name: kubernetes-helm
           - name: libtool
           - name: libxml2
+          - name: neovim
           - name: nghttp2
           - name: pinentry-mac
           - name: protobuf
