@@ -102,31 +102,31 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: vault
-        hashicorp_version: 1.6.1
+        hashicorp_version: 1.6.3
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: consul
-        hashicorp_version: 1.9.1
+        hashicorp_version: 1.9.3
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: terraform
-        hashicorp_version: 0.14.4
+        hashicorp_version: 0.14.7
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: nomad
-        hashicorp_version: 1.0.1
+        hashicorp_version: 1.0.4
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: packer
-        hashicorp_version: 1.6.6
+        hashicorp_version: 1.7.0
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
