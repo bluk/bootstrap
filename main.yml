@@ -12,6 +12,7 @@
           - name: asciinema
           - name: bash
           - name: bash-completion
+          - name: capnp
           - name: ctags
           - name: curl
           - name: direnv
