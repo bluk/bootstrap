@@ -94,31 +94,31 @@
     - role: bluk.hashicorp
       vars:
         hashicorp_program: vault
-        hashicorp_version: 1.7.1
+        hashicorp_version: 1.9.0
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: consul
-        hashicorp_version: 1.9.3
+        hashicorp_version: 1.10.4
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: terraform
-        hashicorp_version: 0.15.3
+        hashicorp_version: 1.0.11
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: nomad
-        hashicorp_version: 1.0.4
+        hashicorp_version: 1.2.2
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
       vars:
         hashicorp_program: packer
-        hashicorp_version: 1.7.2
+        hashicorp_version: 1.7.8
         hashicorp_platform: darwin_amd64
         hashicorp_install_path: /usr/local/bin
     - role: bluk.hashicorp
@@ -139,32 +139,32 @@
     #     op_cli_platform: darwin_amd64
     #     op_cli_install_path: /usr/local/bin
   tasks:
-    - name: Install Universal ctags
-      shell: brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-    - name: Install Rust
-      shell: curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable -y
-    - name: Install Rust Toolchain Stable
-      shell: rustup update
-    - name: Install Rust Toolchain Stable
-      shell: rustup toolchain install stable
-    - name: Install Rust Components
-      shell: rustup component add rls rust-analysis rust-src rustfmt clippy
-    - name: Install bash-language-server
-      command: "npm i -g bash-language-server"
-    - name: Install vscode-json-languageserver
-      command: "npm i -g vscode-json-languageserver"
-    - name: Install vscode-html-languageserver-bin
-      command: "npm i -g vscode-html-languageserver-bin"
-    - name: Install vscode-css-languageserver-bin
-      command: "npm i -g vscode-css-languageserver-bin"
-    - name: Install yaml-language-server
-      command: "npm i -g yaml-language-server"
-    - name: Install javascript-typescript-langserver
-      command: "npm i -g javascript-typescript-langserver"
-    - name: Install typescript-language-server
-      command: "npm install -g typescript typescript-language-server"
-    - name: Install fzf bin
-      shell: ~/.fzf/install --bin
+    # - name: Install Universal ctags
+    #   shell: brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+    # - name: Install Rust
+    #   shell: curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain stable -y
+    # - name: Install Rust Toolchain Stable
+    #   shell: rustup update
+    # - name: Install Rust Toolchain Stable
+    #   shell: rustup toolchain install stable
+    # - name: Install Rust Components
+    #   shell: rustup component add rls rust-analysis rust-src rustfmt clippy
+    # - name: Install bash-language-server
+    #   command: "npm i -g bash-language-server"
+    # - name: Install vscode-json-languageserver
+    #   command: "npm i -g vscode-json-languageserver"
+    # - name: Install vscode-html-languageserver-bin
+    #   command: "npm i -g vscode-html-languageserver-bin"
+    # - name: Install vscode-css-languageserver-bin
+    #   command: "npm i -g vscode-css-languageserver-bin"
+    # - name: Install yaml-language-server
+    #   command: "npm i -g yaml-language-server"
+    # - name: Install javascript-typescript-langserver
+    #   command: "npm i -g javascript-typescript-langserver"
+    # - name: Install typescript-language-server
+    #   command: "npm install -g typescript typescript-language-server"
+    # - name: Install fzf bin
+    #   shell: ~/.fzf/install --bin
     - name: Install vim plugins
       shell: vim +PlugClean! +PlugInstall +qall
     - name: Install nvim plugins
